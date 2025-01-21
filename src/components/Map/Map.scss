@@ -1,0 +1,36 @@
+.map-container {
+    height: 100vh;
+    margin: 0 var(--margin);
+
+}
+
+.map-card {
+    background-color: var(--red);
+    border-radius: 10px;
+    padding: 20px;
+
+    p {
+        color: var(--text);
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .map-content {
+        flex-direction: column;
+    }
+
+    .map {
+        height: 300px !important;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .map-card {
+        p {
+            font-size: 14px;
+        }
+    }
+}

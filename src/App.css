@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Balhattan";
+    src: url('../font/Balhattan.ttf') format("truetype");
+    
+    font-family: "Balhattan italic";
+    src: url('../font/BalhattanItalic.ttf') format("truetype");
+}
+
+:root {
+    --section-gap: 2rem;
+    --margin: 5rem;
+
+    --text: #fff;
+    --black: #000000;
+    --red: #750000;
+    --gray: #808080;
+    --gray-700: #2c2b2b;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black);
+    color: var(--text);
+    font-family: "Balhattan italic", sans-serif;
+    overflow-x: hidden;
+}
+
+.app {
+    padding-bottom: var(--margin);
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --margin: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    :root {
+        --margin: 0.5rem;
+        --section-gap: 1rem;
+    }
+}
